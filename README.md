@@ -4,7 +4,20 @@ Scripts for analyses of finger millet-infecting *Magnaporthe oryzae* (MoE) strai
 [PRJNA1279063](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1279063). The reference is the E2 genome
 assembly (GenBank GCA_059469275.1).
 
-This repository contains the analysis and plotting code only. No sequence data, alignments or result tables are included.
+This repository contains the analysis and plotting code, and the interactive deletion figures. No sequence
+data or alignments are included.
+
+## Interactive figures
+
+The interactive figures and the deletion database are in `docs/` and can be viewed at
+https://gmhshr123.github.io/finger-millet-blast-related-analysis/
+
+| Page | Content |
+|---|---|
+| `heatmap_226_strains_all_base.html` | All-base deletions in 226 strains, per window |
+| `heatmap_226_strains_SNP_based.html` | SNP-based deletions in 226 strains, per window |
+| `deletion_tracks_33_strains.html` | Deletion tracks and genome features along E2 in 33 Ethiopian strains |
+| `deletion_database.html` | All all-base deletions in 33 Ethiopian strains, with breakpoints and read evidence |
 
 ## Contents
 
@@ -44,9 +57,9 @@ Scripts are numbered in run order. The main steps are:
 6. Deletion calls in all 226 strains, gene and effector statistics, and the genome-wide figures (`19`,
    `20`, `27`, `34`-`38`, `40`-`43`, `45`-`48`).
 
-Note: the figure scripts `45`-`48` read the per-window values from two interactive HTML pages (226-strain
-heat map and deletion tracks) that were made for checking the results. The scripts that built those pages
-are not included.
+Note: the figure scripts `45`-`48` read the per-window values from the interactive pages in `docs/`
+(`heatmap_226_strains_all_base.html` and `deletion_tracks_33_strains.html`). The scripts that built those
+pages are not included.
 
 ### `rip_analysis/`
 

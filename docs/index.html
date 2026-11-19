@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoE deletion figures</title>
+<style>
+:root{--bg:#ffffff;--ink:#1d1f23;--muted:#5b6068;--line:#d9dce1;--link:#1f5fa8;--card:#f6f7f9}
+@media (prefers-color-scheme: dark){:root{--bg:#16181c;--ink:#e6e8eb;--muted:#a0a6ae;--line:#33373e;--link:#7fb0ea;--card:#1e2126}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Segoe UI",system-ui,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 60px}
+h1{font-size:1.6rem;margin:0 0 8px}
+p{margin:0 0 14px;color:var(--muted)}
+ul{list-style:none;padding:0;margin:24px 0}
+li{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:0 0 12px}
+a{color:var(--link);font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline}
+li span{display:block;color:var(--muted);font-size:.93rem;margin-top:4px}
+small{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>Deletions relative to E2 in finger millet-infecting <i>Magnaporthe oryzae</i> (MoE)</h1>
+<p>Interactive figures and the deletion database. Each page is self-contained and opens in a web browser.</p>
+<ul>
+<li><a href="heatmap_226_strains_all_base.html">Heat map of all-base deletions in 226 strains</a>
+<span>Fraction of the uniquely mappable bases deleted per window, one row per strain.</span></li>
+<li><a href="heatmap_226_strains_SNP_based.html">Heat map of SNP-based deletions in 226 strains</a>
+<span>Fraction of the SNPs per window that lie in a run of at least five consecutive missing SNP calls, one row per strain.</span></li>
+<li><a href="deletion_tracks_33_strains.html">Deletion tracks along E2 in 33 Ethiopian strains</a>
+<span>All-base and SNP-based deletions, deletions with directly joined flanks, deletions with a TE at an end, SNP density, repeat fraction and effector genes, per window.</span></li>
+<li><a href="deletion_database.html">Deletion database</a>
+<span>Every all-base deletion in the 33 Ethiopian strains, with its breakpoints, read evidence and the sequence at each end (about 23 MB; loading takes a few seconds).</span></li>
+</ul>
+<p><small>Analysis code: <a href="https://github.com/gmhshr123/finger-millet-blast-related-analysis">github.com/gmhshr123/finger-millet-blast-related-analysis</a></small></p>
+</main>
+</body>
+</html>
